@@ -392,13 +392,13 @@ GPIO26
 $Comp
 L Connector:Conn_01x04_Male J5
 U 1 1 5D4F978B
-P 4550 7100
-F 0 "J5" H 4658 7381 50  0000 C CNN
-F 1 "DISP" H 4658 7290 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 4550 7100 50  0001 C CNN
-F 3 "~" H 4550 7100 50  0001 C CNN
-	1    4550 7100
-	1    0    0    1   
+P 4550 7000
+F 0 "J5" H 4658 7281 50  0000 C CNN
+F 1 "DISP" H 4658 7190 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 4550 7000 50  0001 C CNN
+F 3 "~" H 4550 7000 50  0001 C CNN
+	1    4550 7000
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4750 6900 4900 6900
@@ -768,6 +768,28 @@ F 3 "" H 8550 9650 50  0001 C CNN
 	1    8550 9650
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5D53F89A
+P 10250 4700
+F 0 "J2" H 10168 4375 50  0000 C CNN
+F 1 "Vin" H 10168 4466 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTB_2,5_2-GF-5,08_1x02_P5.08mm_Horizontal_ThreadedFlange_MountHole" H 10250 4700 50  0001 C CNN
+F 3 "~" H 10250 4700 50  0001 C CNN
+	1    10250 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5D540EF8
+P 10450 4700
+F 0 "#PWR0148" H 10450 4450 50  0001 C CNN
+F 1 "GND" H 10455 4527 50  0000 C CNN
+F 2 "" H 10450 4700 50  0001 C CNN
+F 3 "" H 10450 4700 50  0001 C CNN
+	1    10450 4700
+	1    0    0    -1  
+$EndComp
 Text Label 6000 4400 2    50   ~ 0
 LED_SCLK
 Text Label 6000 4300 2    50   ~ 0
@@ -826,6 +848,8 @@ Text Label 1950 2700 1    50   ~ 0
 SDA
 Text Label 2250 2700 1    50   ~ 0
 SCL
+Wire Wire Line
+	10450 4600 11600 4600
 $Comp
 L Device:R R6
 U 1 1 5D6A5FA5
@@ -865,4 +889,6 @@ F 3 "" H 4350 3300 50  0001 C CNN
 	1    4350 3300
 	0    -1   -1   0   
 $EndComp
+Text Label 11050 4600 0    50   ~ 0
+VIN
 $EndSCHEMATC

@@ -800,6 +800,4 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" H 5650 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1250 4850 1400 4850
-Text Label 1300 4850 0    50   ~ 0
-VIN
 $EndSCHEMATC
